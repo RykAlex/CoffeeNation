@@ -1,0 +1,24 @@
+.container {
+  .filter-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .filter-content {
+      display: flex;
+      align-items: center;
+      margin-bottom: 48px;
+      .show-all {
+        margin-right: 8px;
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 170%;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+    }
+  }
+}
