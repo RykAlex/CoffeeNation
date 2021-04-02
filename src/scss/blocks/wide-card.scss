@@ -1,0 +1,59 @@
+.wide-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+  border-radius: 32px;
+  background: grey;
+  padding: 40px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 120px;
+  .top {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+  h5 {
+    position: relative;
+    z-index: 1;
+  }
+  .bg {
+    border-radius: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .mob {
+    display: none;
+  }
+
+  @media screen and (max-width: $tablet) {
+  }
+
+  @media screen and (max-width: $mobile) {
+    height: 552px;
+    padding: 16px 0 0 0;
+    background: #161616;
+    .top {
+      padding: 0 16px;
+      width: 100%;
+    }
+    h5 {
+      padding: 0 16px;
+    }
+    .bg {
+      display: none;
+    }
+    .mob {
+      display: block;
+      border-radius: 0 0 32px 32px;
+    }
+  }
+}

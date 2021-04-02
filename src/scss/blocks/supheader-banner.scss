@@ -1,0 +1,27 @@
+.banner {
+  background: #f7b000;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 96px;
+    img {
+      margin-right: 16px;
+      object-fit: contain;
+      height: 100%;
+    }
+    @media screen and (max-width: $tablet) {
+    }
+
+    @media screen and (max-width: $mobile) {
+      height: 160px;
+      flex-wrap: wrap-reverse;
+      align-items: flex-start;
+      img {
+        height: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+section {
+  margin-bottom: 120px;
+  overflow: hidden;
+  &.mb-0 {
+    margin-bottom: 0;
+  }
+  > h2 {
+    text-align: center;
+
+    & + .container,
+    & + .endless-tags {
+      margin-top: 56px;
+    }
+  }
+
+  .adv {
+    height: 265px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .breadcrumbs + h1 {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .breadcrumbs + h1 + .subtitle {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .tags {
+    display: flex;
+    justify-content: center;
+    .tag + .tag {
+      margin-left: 16px;
+    }
+  }
+}
+.striped {
+  margin-bottom: 150px;
+  section {
+    &:nth-child(odd) {
+      background: $beuge;
+    }
+    padding: 45px 0 75px 0;
+    margin-bottom: 0;
+  }
+}

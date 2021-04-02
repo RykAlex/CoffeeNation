@@ -1,0 +1,47 @@
+.endless-tags {
+  margin-bottom: 167px;
+  .row {
+    display: flex;
+    li {
+      flex-shrink: 0;
+      .tag {
+        transition: all linear 0.4s;
+      }
+      &:nth-child(2n) {
+        .tag {
+          background: $beuge;
+        }
+      }
+      &:nth-child(3n) {
+        .tag {
+          background: $background-yellow;
+        }
+      }
+      &:nth-child(4n) {
+        .tag {
+          background: $background-blue;
+        }
+      }
+      // &:nth-child(odd) {
+      // 	.tag {
+      // 		background: red;
+      // 	}
+      // }
+    }
+  }
+
+  .mask.reverse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  // > div:nth-child(2) {
+  // 	transform: scaleX(-1);
+  // }
+  // .row.second {
+  // 	transform: scaleX(-1);
+  // }
+
+  .row.reverse {
+    //transform: translateX(-50%);
+  }
+}
