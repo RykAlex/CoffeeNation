@@ -1,34 +1,61 @@
 $(document).ready(function () {
   /* Slick silder https://kenwheeler.github.io/slick/ */
 
-  $("#newsSlider").slick({
+  $(".slider").slick({
     infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
     variableWidth: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 799,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: true,
+          centerMode: true,
+          autoplay: true,
+        },
+      },
+    ],
   });
 
   $("#myUl").endlessRiver();
   $("#myUl2").endlessRiver();
   $("#myUl3").endlessRiver();
 
-  /* Modal
+  /* modal Search desktop
   ============================*/
-  $("[data-modal]").on("click", function (event) {
-    event.preventDefault();
+  let element = document.querySelector("header .desktop .top .search img");
+  console.log(element);
 
-    let modal = $(this).data("modal");
-    $("body").addClass("no-scroll");
-    $(modal).addClass("show");
+  element.addEventListener("click", function () {
+    let input = document.querySelector(".search-form");
+    input.classList.add("show");
   });
-  $("[data-modal-close]").on("click", function (event) {
-    event.preventDefault();
 
-    let modal = $(this).parents(".modal");
-    modal.removeClass("show");
-    $("body").removeClass("no-scroll");
+  let closeInput = document.querySelector(".search-form .close");
+  closeInput.addEventListener("click", function () {
+    let input = document.querySelector(".search-form");
+    input.classList.remove("show");
   });
+});
+
+/* modal Burger mobile
+  ============================*/
+let burger = document.querySelector(".burger img");
+console.log(burger);
+
+burger.addEventListener("click", function () {
+  let slide = document.querySelector(".slide-menu");
+  slide.classList.add("show");
+});
+
+let closeSlide = document.querySelector(".slide-menu .close");
+closeSlide.addEventListener("click", function () {
+  let slide = document.querySelector(".slide-menu");
+  slide.classList.remove("show");
 });

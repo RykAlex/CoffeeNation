@@ -1,29 +1,28 @@
 .tag {
-	@extend .subtitle;
-	padding: 24px 40px;
-	background: $green-light;
-	display: inline-flex;
-	border-radius: 55px;
-	color: black;
+  @extend .subtitle;
+  padding: 24px 40px;
+  background: $green-light;
+  display: inline-flex;
+  border-radius: 55px;
+  color: black;
 
-	&.small {
-		padding: 8px 16px;
-		@extend .caption;
-		color: black;
-	}
+  &.small {
+    padding: 8px 16px;
+    @extend .caption;
+    color: black;
+  }
 
-	&:nth-child(2n){
-		background: $beuge;
-	}
+  &:nth-child(2n) {
+    background: $beuge;
+  }
 
-	&:nth-child(3n){
-		background: $background-blue;
-	}
+  &:nth-child(3n) {
+    background: $background-blue;
+  }
 
-	@media screen and (max-width: $tablet) {
-	}
+  @media screen and (max-width: $tablet) {
+  }
 
-	@media screen and (max-width: $mobile) {
-		// padding: 8px 12px;
-	}
+  @media screen and (max-width: $mobile) {
+  }
 }

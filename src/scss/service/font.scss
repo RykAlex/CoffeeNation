@@ -76,7 +76,8 @@ h5 {
 }
 
 a {
-  color: $green;
+  color: black;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -114,6 +115,6 @@ a {
     font-size: 18px;
   }
   .caption {
-    font-size: 13px;
+    font-size: 12px;
   }
 }

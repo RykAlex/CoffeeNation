@@ -1,57 +1,77 @@
-.container {
-  .filter-row {
+.section-populars {
+  margin-bottom: 96px;
+}
+
+.row-filter {
+  margin-bottom: 48px;
+  .show-all {
     display: flex;
     justify-content: center;
     align-items: center;
-    .filter-content {
-      display: flex;
-      align-items: center;
-      margin-bottom: 48px;
-      .show-all {
-        margin-right: 8px;
-        font-family: Inter;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 170%;
-        &:hover {
-          color: $dark;
-          cursor: pointer;
-        }
-      }
-
-      img {
-        object-fit: contain;
-      }
+    h5 {
+      color: $green;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
     }
   }
 }
 a svg {
-  display: block;
+  display: flex;
   text-align: center;
 }
 svg:hover * {
   fill: red;
 }
-.image {
-  overflow: hidden;
+.card {
   width: 379px;
-  height: 379px;
-}
-.image img {
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-}
+  margin-right: 32px;
 
-.image img:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  .container-1_1 {
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+
+      border-radius: 32px;
+
+      img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.2s linear;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
 }
-.rounded {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 32px;
-  display: block;
+.subtitle {
+  color: $dark-middle;
+  margin-bottom: 24px;
+}
+img .video {
+  width: 56px;
+  height: 56px;
+}
+.video {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1000;
+}
+@media screen and (max-width: $mobile) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }

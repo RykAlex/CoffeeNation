@@ -1,41 +1,27 @@
 .slider {
-  width: 2312px;
+  width: 2293px;
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 51%;
+  transform: translateX(-61%);
   overflow: hidden;
   .slick-list {
     overflow: visible;
-    transform: translateX(-285px) !important;
+    transform: translateX(-3%) !important;
   }
-  .slide {
+  .card {
     display: block;
     outline: none;
     transition: all linear 0.5s;
-    // &::after {
-    // 	transition: all linear 0.5s;
-    // 	content: "";
-    // }
 
     &:not(.slick-active) {
       position: relative;
       opacity: 0.5;
-      // &::after {
-      // 	position: absolute;
-      // 	top: 0;
-      // 	left: 0;
-      // 	width: 100%;
-      // 	height: 100%;
-      // 	background: #ffffff80;
-      // }
     }
   }
 
-  .article-card {
-    width: 570px;
-    padding: 0 16px;
-    // width: 100%;
+  .card {
+    width: 538px;
   }
 
   @media screen and (max-width: $tablet) {
@@ -47,19 +33,13 @@
     transform: initial;
     left: initial;
     top: initial;
-    margin: 0 -16px;
     .slick-list {
       overflow: visible;
       transform: initial !important;
     }
 
-    .slide {
-      // padding: 0 13px;
-    }
-
-    .article-card {
+    .card {
       width: calc(100vw - 32px);
-      padding: 0 8px;
     }
   }
 }
