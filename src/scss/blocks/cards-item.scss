@@ -14,7 +14,7 @@
   .show-all {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     h5 {
       color: $green;
       font-family: Inter;
@@ -71,7 +71,8 @@ img .video {
 @media screen and (max-width: $mobile) {
   .cards {
     display: flex;
-    flex-direction: column;
+    overflow: hidden;
+
     .cards-item {
       width: 380px;
       margin-right: 32px;
