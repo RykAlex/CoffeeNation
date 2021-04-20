@@ -1,3 +1,8 @@
+.row-tags {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .tag {
   @extend .subtitle;
   padding: 24px 40px;

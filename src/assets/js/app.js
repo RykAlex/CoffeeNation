@@ -1,26 +1,41 @@
 $(document).ready(function () {
   /* Slick silder https://kenwheeler.github.io/slick/ */
 
-  $(".slider").slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 3,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    variableWidth: true,
-    centerMode: true,
-    responsive: [
-      {
-        breakpoint: 799,
-        settings: {
-          slidesToShow: 1,
-          variableWidth: true,
-          centerMode: true,
-          autoplay: true,
+  $(document).ready(function () {
+    $(".slider").slick({
+      arrows: false,
+      centerMode: true,
+      slidesToShow: 2,
+      variableWidth: true,
+      mobileFitst: true,
+      responsive: [
+        {
+          breakpoint: 799,
+          settings: {
+            slidesToShow: 1,
+            variableWidth: true,
+            centerMode: true,
+            autoplay: true,
+          },
         },
-      },
-    ],
+      ],
+    });
+    $(".slide").slick({
+      arrows: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      variableWidth: true,
+      centerMode: true,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 799,
+          settings: "unslick",
+        },
+      ],
+      // swipeToSlide: true,
+      // infinite: false
+    });
   });
 
   $("#myUl").endlessRiver();

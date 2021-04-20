@@ -1,5 +1,5 @@
 .slider {
-  width: 2293px;
+  width: 2312px;
   position: absolute;
   top: 0;
   left: 51%;
@@ -9,18 +9,18 @@
     overflow: visible;
     transform: translateX(-3%) !important;
   }
-  .card {
+  .slide {
     display: block;
     outline: none;
+    margin-right: 32px;
     transition: all linear 0.5s;
-
     &:not(.slick-active) {
       position: relative;
       opacity: 0.5;
     }
   }
 
-  .card {
+  .slide-item {
     width: 538px;
   }
 
@@ -38,7 +38,7 @@
       transform: initial !important;
     }
 
-    .card {
+    .slide-item {
       width: calc(100vw - 32px);
     }
   }
