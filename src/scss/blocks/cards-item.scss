@@ -71,11 +71,10 @@ img .video {
 @media screen and (max-width: $mobile) {
   .cards {
     display: flex;
-    overflow: hidden;
+    overflow: visible;
 
     .cards-item {
-      width: 380px;
-      margin-right: 32px;
+      min-width: 260px;
       &:last-child {
         margin-right: 0;
       }
