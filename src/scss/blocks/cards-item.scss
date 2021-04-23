@@ -1,9 +1,15 @@
 .cards {
   display: flex;
+  margin: 0 -16px;
+  @media screen and (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
   .cards-item {
-    width: 380px;
-    margin-right: 32px;
-    &:last-child {
+    width: 33.3333333%;
+    margin: 0 16px;
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
       margin-right: 0;
     }
   }
@@ -11,6 +17,9 @@
 
 .row-filter {
   margin-bottom: 48px;
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 24px;
+  }
   .show-all {
     display: flex;
     justify-content: center;
@@ -69,15 +78,4 @@ img .video {
 }
 
 @media screen and (max-width: $mobile) {
-  .cards {
-    display: flex;
-    overflow: visible;
-
-    .cards-item {
-      min-width: 260px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }

@@ -20,21 +20,25 @@ $(document).ready(function () {
         },
       ],
     });
-    $(".slide").slick({
+  });
+  $(document).ready(function () {
+    $(".slider-m").slick({
       arrows: false,
-      mobileFirst: true,
+      centerMode: true,
       slidesToShow: 1,
       variableWidth: true,
-      centerMode: true,
-      autoplay: true,
+      mobileFitst: true,
       responsive: [
         {
           breakpoint: 799,
-          settings: "unslick",
+          settings: {
+            slidesToShow: 1,
+            variableWidth: true,
+            centerMode: true,
+            autoplay: true,
+          },
         },
       ],
-      // swipeToSlide: true,
-      // infinite: false
     });
   });
 

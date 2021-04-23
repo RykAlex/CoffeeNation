@@ -43,3 +43,35 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .slider-m {
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    .slick-list {
+      overflow: visible;
+      transform: translateX(-11%) !important;
+    }
+    .slide {
+      display: block;
+      outline: none;
+      margin-right: 32px;
+      transition: all linear 0.5s;
+      &:not(.slick-active) {
+        position: relative;
+        opacity: 0.5;
+      }
+    }
+
+    .slide-item {
+      width: calc(100vw - 115px);
+    }
+  }
+  .cards-item {
+    display: none;
+  }
+}

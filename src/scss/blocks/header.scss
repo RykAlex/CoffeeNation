@@ -1,5 +1,8 @@
 header {
   margin-bottom: 57px;
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 32px;
+  }
 }
 
 /* Banner 

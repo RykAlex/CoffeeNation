@@ -1,7 +1,9 @@
 .row-tags {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  max-width: 355px;
+  margin: 0 auto;
 }
 .tag {
   @extend .subtitle;
@@ -10,6 +12,7 @@
   display: inline-flex;
   border-radius: 55px;
   color: black;
+  margin-right: 15px;
 
   &.small {
     padding: 8px 16px;
