@@ -37,7 +37,10 @@ a svg {
   text-align: center;
 }
 svg:hover * {
-  fill: red;
+  fill: $green-dark;
+}
+.show-all h5:hover {
+  color: $green-dark;
 }
 
 .subtitle {

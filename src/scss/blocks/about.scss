@@ -24,6 +24,20 @@
 .mob {
   display: none;
 }
+.btn-about {
+  position: absolute;
+  width: 180px;
+  top: 85%;
+  left: 3%;
+  padding: 8px;
+  background-color: $green;
+  color: #fff;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 170%;
+  border-radius: 72px;
+}
 @media screen and (max-width: $mobile) {
   .about {
     height: 552px;
@@ -46,5 +60,20 @@
   }
   h2 {
     margin-bottom: 8px;
+  }
+  .btn-about {
+    position: absolute;
+    width: 180px;
+    top: 46%;
+    left: 4%;
+    padding: 8px;
+    background-color: $green;
+    color: #fff;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    border-radius: 72px;
+    z-index: 1000;
   }
 }
