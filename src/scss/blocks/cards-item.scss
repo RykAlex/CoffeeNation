@@ -17,13 +17,14 @@
 
 .row-filter {
   margin-bottom: 48px;
+  text-align: center;
   @media screen and (max-width: $mobile) {
     margin-bottom: 24px;
   }
   .show-all {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+
     h5 {
       color: $green;
       font-family: Inter;
@@ -36,10 +37,10 @@ a svg {
   display: flex;
   text-align: center;
 }
-svg:hover * {
-  fill: $green-dark;
-}
+
+.show-all:hover path,
 .show-all h5:hover {
+  fill: $green-dark;
   color: $green-dark;
 }
 

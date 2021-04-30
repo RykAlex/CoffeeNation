@@ -28,7 +28,10 @@
     display: flex;
     justify-content: flex-end;
   }
-
-  .row.reverse {
+}
+@media screen and (max-width: $mobile) {
+  .endless-tags .row {
+    display: flex;
+    margin-bottom: -45px;
   }
 }

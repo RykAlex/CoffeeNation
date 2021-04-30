@@ -1,13 +1,13 @@
 .slider {
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
-  left: 49%;
+  left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
   .slick-list {
     overflow: visible;
-    transform: translateX(-22%) !important;
+    transform: translateX(-285px) !important;
   }
   .slide {
     display: block;
